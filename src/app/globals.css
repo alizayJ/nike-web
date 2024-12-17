@@ -22,6 +22,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
 }
 
 * {
@@ -34,9 +35,317 @@ a {
   color: inherit;
   text-decoration: none;
 }
+li{
+  list-style: none;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+.Header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.grey_header {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 36px;
+  overflow: hidden;
+  display: flex;
+}
+.logo_grey {
+  margin-top: 6px;
+  margin-left: 4%;
+ }
+.side_grey {
+  padding-top: 6px;
+  margin-left: 76%;
+  display: flex;
+  justify-content: flex-end;
+}
+.side_grey a {
+  font-weight: 500;
+  font-size: 11px;
+}
+.white_header {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 60px;
+  display: flex;
+}
+.nike_logo {
+  margin:  15px 19px;
+  margin-left: 3%;
+}
+.nav-links{
+display: flex;
+margin-left:auto;
+margin-right: 15%;
+align-self: center;
+}
+.nav-links li{
+  padding: 0 10px;
+  }
+.nav-links a{
+  font-size: 16px;
+  font-weight:500;
+}
+.last_logos{
+  display: flex;
+  margin-right: 3%;
+  align-self: center;
+}
+
+.search-bar{
+  background-color: #F5F5F5;
+  border-radius: 50px;
+  margin-top:11px;
+  margin-bottom: 11px;
+  margin-right: 2%;
+  padding:2px;
+  align-self: center;
+  display: flex;
+}
+.search-bar input {
+  margin-bottom:2px ;
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 11px;
+  outline: none;
+}
+
+.footer{
+  width: 100%;
+  height: 331px;
+  background-color: #111111;
+  position: sticky;
+  bottom: 0;
+  color: #7E7E7E;
+  font-size: 11px;
+}
+
+.footer_list{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  width: 88%;
+  height: 213px;
+  display: flex;
+}
+
+.footer_link2, .footer_link3{
+ margin-left: 5%;
+}
+.footer_link1 li, .footer_link2 li, .footer_link3 li{
+  padding-top: 15px;
+}
+.footer_link1, #about-nike, #get-help{
+  color: #FFFFFF;
+}
+.footer-logos{
+  display: flex;
+  justify-content: space-around;
+   margin-left: auto;
+  margin-right: 0%; 
+}
+.footer-logos svg{
+  margin: 6px;
+}
+
+.footer-last{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  width: 88%;
+  height: 62px;
+  display: flex;
+  bottom: 0;
+}
+.location-last{
+  margin-top: auto;
+  margin-bottom: 0px;
+  display: flex;
+}
+.location-last p{
+color:#FFFFFF;
+margin-top: auto;
+margin-bottom: 0px;
+margin-left: 3px;
+}
+.right-reserved{
+margin-top: auto;
+margin-bottom: 0px;
+margin-left: 10px;
+}
+.last-list{
+display: flex;
+margin: auto 0px 0px auto;
+}
+.last-list li{
+  margin-left: 15px;
+}
+
+.home{
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section{
+  width: 100%;
+}
+.grey-hero{
+  width: 100%;
+  height: 58px;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 3px;
+}
+.hero-img{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.hero-product{
+  margin: 36px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-buttons{
+  margin-top: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-buttons button{
+background-color:#111111;
+color: #F5F5F5;
+border-radius: 50px;
+font-size: 15px;
+padding: 5px 15px;
+margin: 5px;
+}
+
+.bestof-home{
+  margin-top: 58px;
+  margin-bottom: 70px;
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.bestof-hometop{
+ padding: 10px;
+ display: flex;
+}
+.shop-home{
+  display: flex;
+  margin-left: auto;
+  margin-right: 0px;
+}
+.shop-home button{
+  padding: 1px;
+  margin: 3px;
+  font-size: 24px;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.slider{
+  display: flex;
+  justify-content: center;
+  
+}
+.home-price{
+  margin-left: auto;
+  margin-right: 5px ;
+}
+
+
+.stepinto-home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  
+}
+.stepinto-home p{
+  margin:20px ;
+}
+.stepinto-home button{
+  background-color:#111111;
+  color: #F5F5F5;
+  border-radius: 50px;
+  font-size: 15px;
+  padding: 5px 15px;
+  margin-top: 20px;
+}
+.shopwomen-home{
+  display: flex;
+  flex-direction: column;
+}
+.dontmiss-home,.featured-home,.theessentials{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8%;
+}
+.theess-home img{
+  margin: 5px;
+}
+.lastlist-home{
+  color: #757575;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  gap: 20%;
+  padding: 20px;
+  margin-bottom: 6%;
+  }
+  .listlast{
+    padding: 0;
+    margin: 0;
+  }
+  .listlast li{
+    margin-top: 15px;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+  .firsthead-home{
+    color: #111111;
+  }
+
+
+  .main-shop{
+    display: flex;
+    justify-content: center;
+    /* width: 95%; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 96px;
+    margin-bottom: 8%;
+  }
+ .items-shop{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+ }
+
+ .side-shop{
+  margin-right: 10%;
+ }
+.just-shop{
+  color: #9E3500;
 }
